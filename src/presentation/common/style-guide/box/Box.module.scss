@@ -1,0 +1,11 @@
+.boxContainer {
+  position: relative;
+  background-size: cover;
+  background-position: center center;
+  overflow: hidden;
+  text-transform: uppercase;
+  font-size: 10px;
+  line-height: 10px;
+  box-shadow: 0 10px 50px -10px rgb(0 0 0 / 20%);
+  border-radius: .5rem;
+}

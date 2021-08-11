@@ -1,0 +1,102 @@
+$fixed-layout-size: 1280px !default;
+
+.viewport-container {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+
+  @media screen and (max-width: 576px) {
+    position: relative;
+  }
+}
+
+.viewport-container-1200 {
+  @extend .viewport-container;
+  max-width: $fixed-layout-size;
+  top: 0;
+  left: calc((100% - #{$fixed-layout-size}) / 2);
+  bottom: 0;
+  right: auto;
+  border: 1px solid #ddd;
+
+  @media (max-width: #{$fixed-layout-size}) {
+    left: 0;
+  }
+}
+
+.block {
+  display: block;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.flex-fill {
+  flex: 1 1 auto !important;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+}
+
+.flex-v-center {
+  display: flex;
+  align-items: center;
+}
+
+.inline-block {
+  display: inline-block;
+}
+
+.hidden {
+  display: none;
+}
+
+.show {
+  display: inherit;
+}
+
+.overflow-y-auto {
+  overflow-y: auto;
+}
+
+.overflow-x-auto {
+  overflow-x: auto;
+}
+
+.h-full {
+  height: 100%;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.relative {
+  position: relative;
+}
+
+.py-2 {
+  padding-top: .5rem;
+  padding-bottom: .5rem;
+}
+
+.px-2 {
+  padding-left: .5rem;
+  padding-right: .5rem;
+}
